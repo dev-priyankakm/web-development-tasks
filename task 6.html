@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            height: 100px;
+        }
+        .nav {
+            height: 50px;
+            background-color: #4d6739;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #ffffff;
+        }
+        .main {
+            width: 60%;
+            background-color: #ffffff;
+        }
+        .footer {
+            height: 50px;
+            background-color: #1d2b50;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <!-- Header -->
+            <tr>
+                <td colspan="3" class="header"></td>
+            </tr>
+            <!-- Navigation -->
+            <tr>
+                <td colspan="3" class="nav"></td>
+            </tr>
+            <!-- Main Content -->
+            <tr>
+                <td class="sidebar"></td>
+                <td class="main">
+                    <div class="image-container">
+                        <img src="C:\Users\ProBook\Downloads\WhatsApp Image 2025-03-15 at 11.05.01 PM.jpeg" alt="Blue Frog">
+                    </div>
+                </td>
+                <td class="sidebar"></td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+                <td colspan="3" class="footer"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
